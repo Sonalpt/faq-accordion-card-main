@@ -3,49 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./sass/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+ 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
 </head>
 <body>
 
-  <div class="container">
+  <div class="card">
 
-    <div class="illustration">
+    <div class="card__img">
       
     </div>
 
-    <div class="faq">
+    <div id="card__text" >
 
-      <div class="question">How many team members can I invite?</div>
-      <div class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
-      team members for the Premium plan.</div>
+      <h1>FAQ</h1>
 
-      <div class="question">What is the maximum file upload size?</div>
-      <div class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+      <div class="faqSet">
+        <button class="question">How many team members can I invite?<figure class="arrow"><img src="./images/icon-arrow-down.svg"></figure></button>
+        <div class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.</div>
+      </div>
 
-      <div class="question">How do I reset my password?</div>
-      <div class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
-      A reset link will be emailed to you.</div>
+      <div class="faqSet">
+        <button class="question">What is the maximum file upload size?<figure class="arrow"><img src="./images/icon-arrow-down.svg"></figure></button>
+        <div class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+      </div>
 
-      <div class="question">Can I cancel my subscription?</div>
-      <div class="answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
+      <div class="faqSet">
+        <button class="question">How do I reset my password?<figure class="arrow"><img src="./images/icon-arrow-down.svg"></figure></button>
+        <div class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</div>
+      </div>
 
-      <div class="question">Do you provide additional support?</div>
-      <div class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
-    
+      <div class="faqSet">
+        <button class="question">Can I cancel my subscription?<figure class="arrow"><img src="./images/icon-arrow-down.svg"></figure></button>
+        <div class="answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
+      </div>
+
+      <div class="faqSet">
+        <button class="question">Do you provide additional support?<figure class="arrow"><img src="./images/icon-arrow-down.svg"></figure></button>
+        <div class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+      </div>
+
     </div>
   
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">remsB</a>.
   </div>
+
+  
+  <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+
 </body>
 
-<script src="index.js"></script>
+
 
 </html>
