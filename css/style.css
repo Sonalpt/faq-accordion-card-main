@@ -48,7 +48,8 @@ body .card #card__text {
 }
 body .card #card__text > h1 {
   font-family: "KumbhSans-Bold", sans-serif;
-  padding-top: 15%;
+  font-size: 2.2em;
+  padding-top: 5%;
   padding-left: 17px;
   padding-bottom: 10px;
 }
@@ -77,6 +78,7 @@ body .card #card__text hr {
   border: 0;
   border-top: 1px solid #bbbbbe;
   max-width: 99%;
+  padding-top: 2px;
 }
 body .card #card__text .answer {
   padding-left: 18px;
