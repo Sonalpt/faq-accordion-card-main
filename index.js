@@ -12,7 +12,8 @@ $('.question').click(function(){
     if( $(this).hasClass('active') ){
       $(this).removeClass('active');
       $(this).next().removeClass('show');
-    }else{
+    }
+    else{
       $('this').removeClass('active');
       $('.answer').removeClass('show');
   

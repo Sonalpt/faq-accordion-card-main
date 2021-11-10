@@ -20,7 +20,7 @@ body {
   position: relative;
   transition: 0.5s;
   font-family: "KumbhSans-Regular", sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 body .card {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -41,10 +41,16 @@ body .card .card__img {
 }
 body .card #card__text {
   max-width: 50%;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 body .card #card__text > h1 {
   font-family: "KumbhSans-Bold", sans-serif;
   padding-top: 15%;
+  padding-left: 17px;
+  padding-bottom: 10px;
 }
 body .card #card__text .question {
   display: flex;
@@ -67,8 +73,13 @@ body .card #card__text .question:hover {
 body .card #card__text .active {
   font-weight: bold;
 }
+body .card #card__text hr {
+  border: 0;
+  border-top: 1px solid #bbbbbe;
+  max-width: 99%;
+}
 body .card #card__text .answer {
-  padding: 0 18px;
+  padding-left: 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -84,7 +95,7 @@ body .card #card__text .answer {
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 85%;
+  top: 95%;
   transform: translate(-50%, -50%);
 }
 .attribution a {
