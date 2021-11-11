@@ -38,7 +38,7 @@ body {
         border-radius: 10px;
         display: flex;
         flex-direction: row;
-        min-width: 75%;
+        min-width: 60%;
         min-height: 65%;
         .card__box {
             display: block;
@@ -57,13 +57,14 @@ body {
             background-repeat: no-repeat;
             background-position: 150% center;
             overflow: hidden;
-            img {
+            .img__desktop {
                 position: relative;
                 height: auto;
                 max-width: 120%;
-                right: 75px;
-                
-                
+                right: 75px;    
+            }
+            .img__mobile {
+                display: none;
             }
         }
         #card__text {
@@ -126,6 +127,43 @@ body {
         }
         
     }
+    @media (max-width: 900px) {
+        .card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            .card__box {
+                display: none;
+            }
+            .card__img {
+                display: flex;
+                overflow: visible;
+                align-items: center;
+                justify-content: center;
+                min-width: 50%;
+                background-image: url(../images/bg-pattern-mobile.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-y: 5px;
+                .img__desktop {
+                display: none;    
+                }
+                .img__mobile {
+                    display: block;
+                    max-width: 70%;
+                    position: relative;
+                    bottom: 100px;
+                }
+            }
+            #card__text {
+                max-width: 100%;
+                min-height: 70%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
     
 .show {
@@ -144,3 +182,7 @@ body {
         color: hsl(228, 45%, 44%); 
     }
 }    
+
+
+    
+
